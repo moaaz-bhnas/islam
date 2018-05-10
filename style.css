@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: 4rem 'Baloo Bhai', cursive;
+    margin: 0;
+    height: 100vh;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    perspective: 600px;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;  bottom: 0;  left: 0;  right: 0;
+    animation: undertaker 10s linear;
+}
+
+/* --- Wrapper --- */
+.wrapper {
+    animation: close 10s linear;
+}
+
+/* --- Keyframes --- */
+@keyframes close {
+    from {
+        transform: translateZ(-10000px);
+    }
+}
+
+@keyframes undertaker {
+    0% {
+        background-color: #000;
+    }
+    3.3% {
+        background-color: #000;
+    }
+    3.31% {
+        background-color: transparent;
+    }
+    6.6% {
+        background-color: transparent;
+    }
+    6.61% {
+        background-color: #000;
+    }
+    10% {
+        background-color: #000;
+    }
+    10.01% {
+        background-color: transparent;
+    }
+    39.99% {
+        background-color: transparent;
+    }
+    40% {
+        background-color: #000;
+    }
+    43.3% {
+        background-color: #000;
+    }
+    43.31% {
+        background-color: transparent;
+    }
+    46.6% {
+        background-color: transparent;
+    }
+    46.61% {
+        background-color: #000;
+    }
+    50% {
+        background-color: #000;
+    }
+    50.01% {
+        background-color: transparent;
+    }
+}
+
+/* --- Happy Birthday --- */
+.hb {
+    display: flex;
+}
+
+.letter {
+    text-shadow: 0 0 100px;
+}
+
+.letter:nth-child(5) {
+    margin-right: .3em;
+}
+
+/* --- Letters Colors --- */
+.h {
+    color: #940A31;
+}
+
+.a {
+    color: #F19B2A;
+}
+
+.p {
+    color: #D22351;
+}
+
+.y {
+    color: #5E95BD;
+}
+
+.b {
+    color: #094369;
+}
+
+.i {
+    color: #4CBD69;
+}
+
+.r {
+    color: #D2673B;
+}
+
+.t {
+    color: #53BDA9;
+}
+
+.d {
+    color: #F1CA32;
+}
+
+/* --- Name --- */
+.name {
+    color: #222;
+}
