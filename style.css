@@ -3,7 +3,7 @@
 }
 
 body {
-    font: 5rem 'Baloo Bhai', cursive;
+    font: 12vw 'Baloo Bhai', cursive;
     margin: 0;
     height: 100vh;
     text-align: center;
@@ -20,7 +20,7 @@ body::after {
     content: '';
     position: absolute;
     top: 0;  bottom: 0;  left: 0;  right: 0;
-    animation: undertaker 15s linear;
+    animation: undertaker 15s linear .5s;
 }
 
 /* --- Wrapper --- */
@@ -81,6 +81,30 @@ body::after {
     50.01% {
         background-color: transparent;
     }
+    69.99% {
+        background-color: transparent;
+    }
+    70% {
+        background-color: #000;
+    }
+    73.3% {
+        background-color: #000;
+    }
+    73.31% {
+        background-color: transparent;
+    }
+    76.6% {
+        background-color: transparent;
+    }
+    76.61% {
+        background-color: #000;
+    }
+    80% {
+        background-color: #000;
+    }
+    80.01% {
+        background-color: transparent;
+    }
 }
 
 /* --- Happy Birthday --- */
@@ -136,4 +160,10 @@ body::after {
 /* --- Name --- */
 .name {
     color: #222;
+}
+
+@media (min-width: 777px) {
+    body {
+        font-size: 6rem;
+    }
 }
