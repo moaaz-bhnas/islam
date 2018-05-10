@@ -3,7 +3,7 @@
 }
 
 body {
-    font: 4rem 'Baloo Bhai', cursive;
+    font: 5rem 'Baloo Bhai', cursive;
     margin: 0;
     height: 100vh;
     text-align: center;
@@ -20,12 +20,12 @@ body::after {
     content: '';
     position: absolute;
     top: 0;  bottom: 0;  left: 0;  right: 0;
-    animation: undertaker 10s linear;
+    animation: undertaker 15s linear;
 }
 
 /* --- Wrapper --- */
 .wrapper {
-    animation: close 10s linear;
+    animation: close 15s linear;
 }
 
 /* --- Keyframes --- */
